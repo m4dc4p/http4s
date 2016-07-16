@@ -1,7 +1,7 @@
 package org.http4s
 
 import scalaz.{EitherT, \/}
-import fs2.util.Task
+import fs2.Task
 
 object MessageSyntax extends MessageSyntax
 

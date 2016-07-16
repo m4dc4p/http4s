@@ -7,7 +7,7 @@ import org.http4s.server.ServerSoftware
 import org.http4s.util.TaskMonad
 import fs2.Task
 import fs2.Stream
-//import scalaz.stream.text.utf8Decode
+import fs2.text.utf8DecodeC
 
 /**
  * Represents a HTTP Message. The interesting subclasses are Request and Response
@@ -27,7 +27,7 @@ sealed trait Message extends MessageOps { self =>
     (charset getOrElse defaultCharset) match {
       case Charset.`UTF-8` =>
         // suspect this one is more efficient, though this is superstition
-        body.pipe(utf8Decode)
+        body.through(utf8DecodeC)
       case cs =>
         body.pipe(util.decode(cs))
     }

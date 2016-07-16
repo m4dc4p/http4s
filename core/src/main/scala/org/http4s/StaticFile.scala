@@ -11,7 +11,7 @@ import java.time.Instant
 //import scalaz.stream.Cause.{End, Terminated}
 import scalaz.{\/-, -\/}
 import fs2.Strategy
-import fs2.util.Task
+import fs2.Task
 //import scalaz.stream.io
 import fs2.Stream
 import fs2.Stream._

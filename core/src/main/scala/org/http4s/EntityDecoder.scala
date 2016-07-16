@@ -129,11 +129,11 @@ object EntityDecoder extends EntityDecoderInstances {
 
   /** Helper method which simply gathers the body into a single ByteVector */
   def collectBinary(msg: Message): DecodeResult[ByteVector] =
-    DecodeResult.success(msg.body.runFold(ByteVector.empty)(_ ++ _).run)
+    DecodeResult.success(msg.body.runFold(ByteVector.empty)(_ ++ _))
 
   /** Decodes a message to a String */
   def decodeString(msg: Message)(implicit defaultCharset: Charset = DefaultCharset): Task[String] =
-    msg.bodyAsText.runFold(new StringBuffer)(_.append(_)).run.map(_.toString)
+    msg.bodyAsText.runFold(new StringBuffer)(_.append(_)).map(_.toString)
 }
 
 /** Implementations of the EntityDecoder instances */
