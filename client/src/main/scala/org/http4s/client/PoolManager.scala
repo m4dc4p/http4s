@@ -9,7 +9,7 @@ import scala.annotation.tailrec
 import scala.collection.mutable
 import scalaz.{-\/, \/-}
 import scalaz.syntax.either._
-import scalaz.concurrent.Task
+import fs2.util.Task
 
 private final class PoolManager[A <: Connection](builder: ConnectionBuilder[A],
                                                  maxTotal: Int,

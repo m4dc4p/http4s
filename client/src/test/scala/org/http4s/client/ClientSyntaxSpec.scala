@@ -6,7 +6,7 @@ import org.http4s.headers.Accept
 import org.http4s.Status.InternalServerError
 
 import scalaz.-\/
-import scalaz.concurrent.Task
+import fs2.util.Task
 import scalaz.stream.Process
 
 import org.http4s.Status.{Ok, NotFound, Created, BadRequest}

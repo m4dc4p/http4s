@@ -15,7 +15,7 @@ import org.http4s.util.CaseInsensitiveString._
 
 import scala.concurrent.ExecutionContext
 import scala.concurrent.Future
-import scalaz.concurrent.Task
+import fs2.util.Task
 import scalaz.{-\/, \/, \/-}
 
 private object Http1Support {

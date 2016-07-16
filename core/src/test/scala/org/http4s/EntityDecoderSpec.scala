@@ -12,7 +12,7 @@ import scala.language.postfixOps
 import scala.util.control.NonFatal
 import scalaz.{-\/, \/-}
 import scalaz.syntax.bifunctor._
-import scalaz.concurrent.Task
+import fs2.util.Task
 import scalaz.stream.Process._
 
 

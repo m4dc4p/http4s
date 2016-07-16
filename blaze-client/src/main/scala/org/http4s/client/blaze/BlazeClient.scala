@@ -6,8 +6,9 @@ package blaze
 import org.http4s.blaze.pipeline.Command
 import org.log4s.getLogger
 
-import scalaz.concurrent.Task
-import scalaz.{-\/, \/-}
+import scala.concurrent.duration.Duration
+import fs2.util.Task
+reimport scalaz.{-\/, \/-}
 
 /** Blaze client implementation */
 object BlazeClient {

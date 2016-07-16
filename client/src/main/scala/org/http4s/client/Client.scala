@@ -5,7 +5,7 @@ import org.http4s.headers.{Accept, MediaRangeAndQValue}
 import org.http4s.Status.ResponseClass.Successful
 import scala.util.control.NoStackTrace
 
-import scalaz.concurrent.Task
+import fs2.util.Task
 import scalaz.stream.Process
 import scalaz.stream.Process.{eval, eval_}
 

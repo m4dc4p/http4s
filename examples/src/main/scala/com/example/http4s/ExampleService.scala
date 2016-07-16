@@ -19,7 +19,7 @@ import org.http4s.twirl._
 
 import scalaz.stream.Process
 import scalaz.stream.time
-import scalaz.concurrent.Task
+import fs2.util.Task
 import scalaz.concurrent.Strategy.DefaultTimeoutScheduler
 
 object ExampleService {

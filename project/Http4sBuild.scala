@@ -64,6 +64,7 @@ object Http4sBuild extends Build {
   lazy val circeGeneric        = "io.circe"                 %% "circe-generic"           % circeJawn.revision
   lazy val circeJawn           = "io.circe"                 %% "circe-jawn"              % "0.4.1"
   lazy val discipline          = "org.typelevel"            %% "discipline"              % "0.5"
+  lazy val fs2                 = "co.fs2"                   %% "fs2-core"                % "0.9.0-M5"
   lazy val gatlingTest         = "io.gatling"                % "gatling-test-framework"  % "2.2.1"
   lazy val gatlingHighCharts   = "io.gatling.highcharts"     % "gatling-charts-highcharts" % gatlingTest.revision
   lazy val http4sWebsocket     = "org.http4s"               %% "http4s-websocket"        % "0.1.3"

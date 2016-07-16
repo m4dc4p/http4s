@@ -1,7 +1,7 @@
 package org.http4s
 package client
 
-import scalaz.concurrent.Task
+import fs2.util.Task
 
 import org.log4s.getLogger
 
