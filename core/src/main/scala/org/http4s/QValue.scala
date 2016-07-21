@@ -2,7 +2,6 @@ package org.http4s
 
 import scala.language.experimental.macros
 import scala.reflect.macros.Context
-import scalaz._
 
 import org.http4s.util.{Renderable, Writer}
 

@@ -1,9 +1,5 @@
 package org.http4s
 
-import scalaz.Kleisli
-import scalaz.concurrent.Task
-import scalaz.syntax.kleisli._
-
 object Service {
   /**
     * Lifts an unwrapped function that returns a Task into a [[Service]].

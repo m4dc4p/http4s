@@ -5,7 +5,6 @@
 package org.http4s.util
 
 import scala.annotation.tailrec
-import scalaz._
 
 /** A singly-linked list that is guaranteed to be non-empty.
   *
@@ -14,7 +13,6 @@ import scalaz._
   */
 final class NonEmptyList[+A] private[util] (val head: A, val tail: List[A]) {
   import NonEmptyList._
-  import Zipper._
 
   def <::[AA >: A](b: AA): NonEmptyList[AA] = nel(b, head :: tail)
 

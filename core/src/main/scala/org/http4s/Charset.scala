@@ -20,7 +20,6 @@ package org.http4s
 
 import java.nio.charset.{Charset => NioCharset, StandardCharsets}
 import org.http4s.util._
-import scalaz.\/
 
 final case class Charset private (nioCharset: NioCharset) extends Renderable {
   def satisfies(charsetRange: CharsetRange): Boolean = charsetRange isSatisfiedBy this

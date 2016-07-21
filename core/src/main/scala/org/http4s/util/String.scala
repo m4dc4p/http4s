@@ -5,7 +5,6 @@ import java.util.regex.Pattern
 import org.http4s.Charset
 
 import scala.io.Codec
-import scalaz.syntax.Ops
 
 trait StringOps extends Ops[String] {
   def isBlank = self == null || self.trim.nonEmpty

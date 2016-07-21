@@ -1,10 +1,8 @@
-package org.http4s.util
+package org.http4s
+package util
 
 import scala.concurrent.{ExecutionContext, Future, Promise}
 import scala.util.{Success, Failure}
-import scalaz.{-\/, \/-}
-import scalaz.syntax.either._
-import scalaz.concurrent.Task
 
 trait TaskFunctions {
   def unsafeTaskToFuture[A](task: Task[A]): Future[A] = {

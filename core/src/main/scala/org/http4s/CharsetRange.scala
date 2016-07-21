@@ -1,8 +1,6 @@
 package org.http4s
 
-import util._
-
-import scalaz.{Show, Order}
+import org.http4s.util._
 
 sealed abstract class CharsetRange extends HasQValue with Renderable {
   def qValue: QValue

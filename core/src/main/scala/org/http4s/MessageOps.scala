@@ -4,9 +4,6 @@ import java.time.{ZoneOffset, Instant}
 
 import org.http4s.headers.{`Set-Cookie`, `Content-Type`}
 
-import scalaz.\/
-import scalaz.concurrent.Task
-
 trait MessageOps extends Any {
   type Self
 

@@ -1,8 +1,5 @@
 package org.http4s
 
-import scalaz.Maybe
-import scalaz.syntax.std.option._
-
 trait QueryOps {
 
   protected type Self <: QueryOps

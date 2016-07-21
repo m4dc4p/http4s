@@ -8,13 +8,6 @@ import java.nio.channels.{CompletionHandler, AsynchronousFileChannel}
 import java.util.concurrent.ExecutorService
 import java.time.Instant
 
-import scalaz.stream.Cause.{End, Terminated}
-import scalaz.{\/-, -\/}
-import scalaz.concurrent.{Strategy, Task}
-import scalaz.stream.io
-import scalaz.stream.Process
-import Process._
-
 import org.http4s.headers._
 import org.http4s.Status.NotModified
 import org.log4s.getLogger

@@ -1,7 +1,5 @@
 package org.http4s
 
-import scalaz.{Equal, Monoid}
-
 /**
   * Encapsulates the notion of fallthrough orElse for a Service
   * For any given B, if a Fallthrough[B] exists within implicit context

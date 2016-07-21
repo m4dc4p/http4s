@@ -8,14 +8,8 @@ import parser._
 import headers._
 import Http4s._
 import org.http4s.util._
-import scalaz.concurrent._
-import scalaz.concurrent.Task._
 
 import scodec.bits.ByteVector
-import scalaz._
-import Scalaz._
-import scalaz.stream._
-import scalaz.stream.Process._
 import org.parboiled2._
 import org.log4s.getLogger
 

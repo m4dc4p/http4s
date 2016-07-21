@@ -1,9 +1,6 @@
 package org.http4s
 
-import scalaz.std.anyVal._
-import scalaz.syntax.validation._
-import scalaz.{Show, Validation, ValidationNel}
-
+import AllInstances._
 
 final case class QueryParameterKey(value: String) extends AnyVal
 
